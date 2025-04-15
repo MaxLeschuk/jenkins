@@ -13,6 +13,11 @@ public class SpringApp {
      * @param args Command-line arguments.
      */
     public static void main(final String[] args) {
+        String message = null;
+        if (args.length > 0) {
+            message = args[0];
+        }
+        System.out.println("Length: " + message.length());
         SpringApplication.run(SpringApp.class, args);
     }
 }
